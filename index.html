@@ -172,7 +172,7 @@
 				</section>
 
 				<section aria-labelledby="slide7">
-					<h3 id="slide7">The curb cut effect</h3>
+					<h3 id="slide7" class="visually-hidden">The curb cut effect</h3>
 					
 					<img
 						class="stretch"
@@ -185,8 +185,6 @@
 						<p>Curb cuts, were initially designed for wheel chair users to safely get off the footpath, and cross the street.</p>
 						<p>But when people were asked what they think the curb cut was for, cyclists thought it's for them. Parents with strollers thought it's for them. Same as the delivery person.</p>
 						<p>Many groups benefit from things being designed for ease of access.</p>
-						<hr>
-						<p>Speaking of access needs, what are the different types out there?</p>
 					</aside>
 				</section>
 
@@ -199,33 +197,17 @@
 
 					<aside class="notes">
 						<p>So based on what I've just said, you can guess that answer.<span aria-hidden="true">[Next]</span></p>
-						<p>It is for <strong>everyone</strong></p>
+						<p>It is for <strong>everyone</strong>. Not convinced?</p>
+						<ul>
+							<li>1 in 4 Kiwis have a access needs</li>
+							<li>Anyone can become disabled. We all do when we break our leg or grow old.</li>
+						</ul>
 						<p>By designing a disability friendly experience, you can often benefit wider ranging audience than you think. I'll show you in a moment. <span aria-hidden="true">[Next]</span></p>
-					</aside>
-				</section>
-
-				<section aria-labelledby="slide">
-					<h3 id="slide" class="fragment" data-fragment-index="1">
-						Thinking about “Disabled”
-					</h3>
-
-					<ul>
-						<li class="fragment" data-fragment-index="1">1 in 4 Kiwis have a access needs</li>
-						<li class="fragment" data-fragment-index="2">Anyone can become disabled</li>
-						<li class="fragment" data-fragment-index="3">Social model of disability</li>
-						<li class="fragment" data-fragment-index="4">Loyal users</li>
-					</ul>
-
-					<aside class="notes">
-						<p>When I started learning about disability, I was so scared of referring to someone as “disabled”. </p>
-						<p>Is that an offensive way to refer to a group?</p>
-						<p>But after talking to advocates, reading user stories, and watching demos, I realised no, “disabled people” is exactly what we should be using.</p>
-						<p>It’s <strong>social model of disability</strong>, which is especially relevant when us creators create things for people to use.</p>
 					</aside>
 				</section>
 				
 				<section aria-labelledby="slide">
-					<h3 id="slide">
+					<h3 id="slide" class="visually-hidden">
 						Types of disabilities
 					</h3>
 
@@ -234,6 +216,10 @@
 							alt="Micrsoft inclusive design personal spectrum, showing how different types of physical disabilities can be caused permanently, temporarily, and situationally.">
 
 					<aside class="notes">
+						<p>When I started learning about disability, I was so scared of referring to someone as “disabled”. </p>
+						<p>Is that an offensive way to refer to a group?</p>
+						<p>But after talking to advocates, reading user stories, and watching demos, I realised no, “disabled people” is exactly what we should be using.</p>
+						<p>It’s <strong>social model of disability</strong>, which is especially relevant when us creators create things for people to use.</p>
 						<ul>
 							<li>A <strong>blind</strong> person can be disabled from using a site that isn’t well designed for screen readers.</li>
 							<li>A <strong>wheel chair rider</strong> post hip surgery can be disabled by narrow groceries self checkout.</li>
@@ -245,6 +231,67 @@
 						<p>It is the creators saying: <strong>The problem is with you, not the tool</strong>.</p>
 						<p>Wow, what a way to create an inclusive world.</p>
 						<p>It’s especially scary to think about, when anyone can become ‘disabled’ at any point in their lives.</p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide7">
+					<h2 id="slide7">How to create<br>an accessible experience?</h2>
+					<p>
+						Start with content and HTML, not visuals
+					</p>
+
+					<aside class="notes">
+						<p>You may have been sick of the 'content is king' saying</p>
+						<p>There's no truer saying in the field of accessibility</p>
+						<p>What are the users actually on your web product for?</p>
+						<p>It's information and services. Visuals is a secondary way to deliver that information</p>
+						<p>When I work with a designer who starts imagining a flow in pure text experience first, 70-80% of the accessibility problems will be resolved at the design phase.</p>
+						<p>Then it is up to developers to drive the rest home, using the most semantic HTML code possible</p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide8">
+					<h3 id="slide8">Linear text experience</h3>
+					<p class="fragment" data-fragment-index="1">
+						❤️ by keyboard only users, <br>screen readers, <br>people with different cognitive abilities
+					</p>
+
+					<aside class="notes">
+						<p>When you start with visuals, it's easy to focus on the layout, the colours, the typography, the imagery, and other visual cues to hint at actions users can take. It's fun!</p>
+						<p>But often, it's very hard to translate the 'feel' of colours and typography to access needs users, using assitive tools.</p>
+						<p>As a sighted user, I can quickly scan the visuals to understand what your product and services is about.</p>
+						<p>Screen reader users and keyboard users cannot take so much information all at once. Their tool only let them interact with your product one text or input at a time. So think about your user flow, and make sure to design that order explicitly and clearly. Don't make people jump around your page.</p>
+						<p>The best designers and designs I've ever worked with, start from a linear text experience, which can be easily understood what read out loud.</p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide9">
+					<h3 id="slide9">Multiple ways to convey information</h3>
+					<p class="fragment" data-fragment-index="1">
+						Text, video, audio, non-coloured visual treatments
+					</p>
+
+					<aside class="notes">
+						<p>Another thing to do is to provide multiple ways to convey information</p>
+						<p>When displaying images, think of how you want to explain that image to a friend over the phone. That's the text developers need from you to implement as an alt text.</p>
+						<p>When posting a video, enable closed caption and or audio description for those who cannot hear, is working in a loud area without a headphone.</p>
+						<p>When creating a podcast, provide transcript of the conversation. As a bonus, that is also good for SEO/google search!</p>
+						<p>When showing errors, make sure to use other visual cues that this is an error, not just colours, because colourblind users will not see those colours.</p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide10">
+					<h2 id="slide10">Accessibility is a right</h2>
+					<p class="fragment" data-fragment-index="1">
+						to <em>equal access</em> of <em>your</em> information and services</p>
+
+					<aside class="notes">
+						<p>I'm speaking to the future designers, who will go out there and create useful experiences for lots of people.</p>
+						<p>I want us all to remember, that accessibility is a right</p>
+						<p>When us creators design things without ease of access in mind, we DISABLE people. We take away their rights.</p>
+						<p>People can be disabled in many ways, be it permanently, temporarily, and situationally.</p>
+						<p>We can help prevent that, by creating clear linear text experience, and provide multiple ways to access products and services.</p>
+						<p>By creating accessible designs, your design will become more valuable and usable by more people.</p>
 					</aside>
 				</section>
 
